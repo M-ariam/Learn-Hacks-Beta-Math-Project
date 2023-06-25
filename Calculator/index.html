@@ -17,6 +17,7 @@
                     <input type="text" name="display">
                 </div>
                 <div>
+                    <!-- Row one -->
                     <button type="button" onclick="display.value = '' ">AC</button>
                     <button type="button" onclick="display.value = display.value.toString().slice(0, -1) ">DE</button>
                     <button type="button" onclick="display.value += '(' ">(</button>
@@ -24,6 +25,7 @@
                     <button type="button" onclick="display.value = addOperator(display.value, '/')">/</button>
                 </div>
                 <div>
+                    <!-- Row two -->
                     <button type="button" onclick="display.value += 'Math.log(' ">In</button>
                     <button type="button" onclick="display.value += '7' ">7</button>
                     <button type="button" onclick="display.value += '8' ">8</button>
@@ -31,6 +33,7 @@
                     <button type="button" onclick="display.value = addOperator(display.value, '*')">*</button>
                 </div>
                 <div>
+                    <!-- Row three -->
                     <button type="button" onclick="display.value += 'Math.log(' ">log</button>
                     <button type="button" onclick="display.value += '4' ">4</button>
                     <button type="button" onclick="display.value += '5' ">5</button>
@@ -38,6 +41,7 @@
                     <button type="button" onclick="display.value = addOperator(display.value, '-')">-</button>
                 </div>
                 <div>
+                    <!-- Row four -->
                     <button type="button" onclick="display.value += 'Math.sqrt(' ">√</button>
                     <button type="button" onclick="display.value += '1' ">1</button>
                     <button type="button" onclick="display.value += '2' ">2</button>
@@ -45,6 +49,7 @@
                     <button type="button" onclick="display.value = addOperator(display.value, '+')">+</button>
                 </div>
                 <div>
+                    <!-- Row five -->
                     <button type="button" onclick="display.value = addOperator(display.value, '**')">^</button>
                     <button type="button" onclick="display.value += '0' ">0</button>
                     <button type="button" onclick="display.value += '.' ">.</button>
@@ -53,6 +58,7 @@
                 </div>
             </form>
         </div>
+        <!-- History tab -->
         <div class="historyTab">
             <h4>HISTORY</h4>
             <div id="history" class="historyContainer">
