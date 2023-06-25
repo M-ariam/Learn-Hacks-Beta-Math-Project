@@ -1,7 +1,8 @@
+// Variables
 let ans = ''
 let equation = ''
-const equationList = []
 
+// Adds equation and answer to the history tab
 function addHistory() {
     const div = document.createElement('div');
 
@@ -16,10 +17,10 @@ function addHistory() {
     historyContainer.prepend(div);
 }
 
+// Evaluates inputs
 function evaluateInput(input) {
     equation = input
     ans = eval(input)
-    equationList.push(String(equation + "=" + ans))
     addHistory()
 
     try {
@@ -29,6 +30,7 @@ function evaluateInput(input) {
     }
 }
 
+// Determines if ans is needed
 function addOperator(input, operator) {
     if (ans !== '' && input == ans) {
         return 'ans' + operator
