@@ -16,10 +16,13 @@
 }
 
 .calculator {
-    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: -10px -10px 20px #ffffff1a, 10px 10px 20px #00000033;
     background: #0c254b;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 button {
@@ -29,7 +32,7 @@ button {
     width: 60px;
     height: 60px;
     border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: -8px -8px 15px #ffffff1a, 5px 5px 15px #00000033;
     background: transparent;
     font-size: 20px;
     color: #fff;
@@ -55,4 +58,43 @@ form .display input {
 
 .equal {
     width: 145px
+}
+
+.historyContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.historyTab {
+    width: 400px;
+    height: 43vh;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.historyTab h4 {
+    color: #fff;
+    padding: 0.5em;
+    box-shadow: 0 5px 5px #00000033;
+}
+
+.historyItem {
+    border-bottom: 1px solid #646464;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: #bebebe;
+    font-size: 80%;
+}
+
+.historyItem>*:first-child {
+    padding-top: 0.5em;
+}
+
+.historyItem>*:last-child {
+    text-align: right;
 }
